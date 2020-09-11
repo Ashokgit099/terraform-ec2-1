@@ -1,13 +1,13 @@
 resource "aws_security_group" "AshokSG" {
   name        = "AshokSG"
   description = "Create a Security group for create a EC2 instance"
-  vpc_id      = "default"
+  vpc_id      = "${var.vpc}"
 
   ingress {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = "[10.0.0.0/16]"
+    cidr_blocks = "[10.0.0.0/0]"
   }
   ingress {
     from_port   = 80
