@@ -1,6 +1,6 @@
 resource "aws_security_group" "AshokSG" {
-  name        = "allow_tls"
-  description = "ACreate a Security group for create a EC@ instance"
+  name        = "AshokSG"
+  description = "Create a Security group for create a EC2 instance"
   vpc_id      = "default"
 
   ingress {
