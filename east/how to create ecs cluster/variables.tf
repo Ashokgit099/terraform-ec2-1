@@ -15,6 +15,7 @@ variable "subnets" {
   default = "subnet-64e7ac0c"
 }
 
+
 variable "availability_zones" {
   default = "us-east-1b"
 }
